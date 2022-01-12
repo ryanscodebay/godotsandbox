@@ -1,0 +1,53 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://SERENE_VILLAGE_REVAMPED/Serene_Village_16x16.png" type="Texture" id=1]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 29.3662, 43.3913 )
+
+[node name="Node2D" type="Node2D"]
+position = Vector2( 453.475, 308.678 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( -274.442, -198.676 )
+scale = Vector2( 2.87077, 3.19504 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 49, 16, 107, 45 )
+
+[node name="Sprite2" type="Sprite" parent="."]
+position = Vector2( 60.6128, -189.696 )
+scale = Vector2( 2.26812, 2.28281 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 144, 154, 131, 91 )
+
+[node name="Sprite3" type="Sprite" parent="."]
+position = Vector2( 400.157, -200.921 )
+scale = Vector2( 2.75632, 2.78046 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 7, 119, 85, 58 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sprite3"]
+input_pickable = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite3/StaticBody2D"]
+position = Vector2( 0, -1.22168 )
+rotation = 1.5708
+scale = Vector2( 1, 1 )
+shape = SubResource( 1 )
+
+[node name="Sprite4" type="Sprite" parent="."]
+position = Vector2( -280.054, 98.7766 )
+scale = Vector2( 2.87077, 3.19504 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 3, 344, 91, 52 )
+
+[node name="Sprite5" type="Sprite" parent="."]
+position = Vector2( 329.443, 91.4806 )
+scale = Vector2( 2.87077, 3.13983 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 164, 336, 73, 61 )

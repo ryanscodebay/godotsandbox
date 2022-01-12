@@ -1,0 +1,6 @@
+[gd_scene format=2]
+
+[node name="sub-scene" type="Node2D"]
+position = Vector2( 162, 200 )
+
+[node name="Sprite" type="Sprite" parent="."]
