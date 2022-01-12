@@ -1,0 +1,40 @@
+[gd_scene format=2]
+
+[node name="Label" type="Label"]
+margin_left = 300.0
+margin_top = 164.111
+margin_right = 325.354
+margin_bottom = 178.111
+rect_scale = Vector2( 3.55581, 1.00768 )
+size_flags_horizontal = 4
+custom_colors/font_color_shadow = Color( 0.113725, 0.0627451, 0.0627451, 1 )
+text = "very important info"
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Control" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -10.0
+margin_top = -10.0
+margin_right = 10.0
+margin_bottom = 10.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+show_behind_parent = true
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -10.0
+margin_top = -10.0
+margin_right = 10.0
+margin_bottom = 10.0
+rect_scale = Vector2( 0.998271, 1 )
+hint_tooltip = "very important tooltip"
+color = Color( 0.0745098, 0.560784, 0.639216, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
