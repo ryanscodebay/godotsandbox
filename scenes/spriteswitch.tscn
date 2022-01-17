@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://icon.png" type="Texture" id=1]
+[ext_resource path="res://scripts/spriteswitch.gd" type="Script" id=2]
+
+[node name="spriteswitch" type="Sprite"]
+position = Vector2( 473.761, 271.529 )
+texture = ExtResource( 1 )
+script = ExtResource( 2 )
