@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/SimpleCube.obj-99cb6a1c2490d8d43f27c6463c683322.mesh"
+
+[deps]
+
+files=[ "res://.import/SimpleCube.obj-99cb6a1c2490d8d43f27c6463c683322.mesh" ]
+
+source_file="res://meshes/SimpleCube.obj"
+dest_files=[ "res://.import/SimpleCube.obj-99cb6a1c2490d8d43f27c6463c683322.mesh", "res://.import/SimpleCube.obj-99cb6a1c2490d8d43f27c6463c683322.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true
