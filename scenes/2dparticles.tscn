@@ -1,0 +1,35 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://icon.png" type="Texture" id=1]
+
+[sub_resource type="Gradient" id=1]
+offsets = PoolRealArray( 0, 0.493827, 1 )
+colors = PoolColorArray( 1, 1, 1, 1, 0.884766, 0.334906, 0.0518417, 1, 0.357531, 0.084877, 0.869141, 1 )
+
+[sub_resource type="GradientTexture" id=2]
+gradient = SubResource( 1 )
+
+[sub_resource type="Curve" id=3]
+_data = [ Vector2( 0, 1 ), 0.0, 0.0, 0, 0, Vector2( 1, 0.0136364 ), 0.0, 0.0, 0, 0 ]
+
+[sub_resource type="CurveTexture" id=4]
+curve = SubResource( 3 )
+
+[sub_resource type="ParticlesMaterial" id=5]
+emission_shape = 1
+emission_sphere_radius = 8.53
+flag_disable_z = true
+direction = Vector3( -45, 0, 0 )
+gravity = Vector3( 0, 0, 0 )
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+scale_curve = SubResource( 4 )
+color_ramp = SubResource( 2 )
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Particles2D" type="Particles2D" parent="."]
+position = Vector2( 536.332, 296.113 )
+emitting = false
+process_material = SubResource( 5 )
+texture = ExtResource( 1 )
